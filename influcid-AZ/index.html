@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Influcid</title>
+    <meta name="description" content="Influcid"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="shortcut icon" href="./images/q10.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="js/script.js"></script>
+  <script>
+    var content = {
+      man: [
+        {
+          selector: 'body > header > div.main-img-container',
+          content: '<div class="main-img-container_utm-man" ></div>'
+        }
+      ]
+    };
+
+    var selector = 'body > header > div.main-img-container';
+    function replacer(content) {
+      var utm = /utm_replace=([^&]*)/g.exec(document.URL)[1];
+      if (utm in content) {
+        console.log(utm);
+        for (i in content[utm]) {
+          document.querySelector(content[utm][i]['selector']).innerHTML=content[utm][i]['content'];
+        };
+      } else {
+        console.log('Каталог контента не имеет такой utm метки');
+      };
+    };
+    replacer(content);
+  </script>
+</head>
+<body>
+    <!-- <div class="alert-license">
+      <a href="license.html">
+        Ovaj sajt koristi kolačiće kako bi poboljšao korisničko iskustvo. Nastavkom korišćenja ovog sajta<br>slažete se sa upotrebom kolačića i naše <b>Politike privatnosti</b>
+      </a>
+      <button class="license-off"><p>Slažem se</p></button>
+    </div> -->
+	<header class="App-header">
+
+
+        <a name='block-nav'></a>
+        <div class="navigation-logo">
+          <a  href="#block-nav" class="logo">Influcid</a>
+          <a class="where-to-buy where-to-buy__desktop" href="#block-5">Haradan almalı</a>
+          <div class="navigation-top" role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" /> <span></span> <span></span> <span></span>
+              <ul id="menu">
+                <li><a class="navmenu" href="#block-1" >Üstünlükləri</a></li>
+                <li><a class="navmenu" href="#block-2" >Təsiri</a></li>
+                <li><a class="navmenu" href="#block-3" >Tərkibi</a></li>
+                <li><a class="navmenu" href="#block-4" >Necə qəbul etməli</a></li>
+<!--                <li><a class="where-to-buy" href="#block-5" >Де купити</a></li>-->
+                <li><a class="active-nav" >az</a><br><a href="index-ru.html" >ru</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="desctop-navigation">
+            <a class="navmenu" href="#block-1" >Üstünlükləri</a>
+              <a class="navmenu" href="#block-2" >Təsiri</a>
+              <a class="navmenu" href="#block-3" >Tərkibi</a>
+              <a class="navmenu" href="#block-4" >Necə qəbul etməli</a>
+<!--              <a class="where-to-buy" href="#block-5" >Haradan almalı</a>-->
+            <div class="lang">
+              <a class="active-nav" >az</a>
+              <a href="index-ru.html" >ru</a>
+            </div>
+          </div>
+          <a class="instruction" href="./instruction.pdf"
+          ><p class="translated-text" key="instruction">Təlimat</p></a
+          >
+        </div>
+
+
+          </div>
+        </div>
+        <div class="main-img-container">
+          <div class="main-img-container_utm" ></div>
+        </div>
+        <a name="block-1"></a>
+        <p>
+          <b>Soyuqdəymə və zökəm?</b> Seçim sənindir. <b>İnflyusid</b>
+        </p>
+
+        <div class="header-block-2">
+          <a class="block-2__plate">
+            <p>Almaniyada istehsal edilmişdir</p>
+          </a>
+          <a class="block-2__plate">
+            <p>Böyüklər və uşaqlar üçün</p>
+          </a>
+          <a class="block-2__plate">
+            <p>Təbii tərkibli</p>
+          </a>
+          <a href="https://www.clinicaltrialsregister.eu/ctr-search/search?query=Influcid" class="block-2__plate">
+            <p>Sübut olunmuş effektivliyi</p>
+          </a>
+        </div>
+      </header>
+      <div class="block-1">
+        <h2>ÜSTÜNLÜKLƏRI</h2>
+        <div class="block-1__text">
+          <p>
+            Soyuqdəymənin tipik simptomlarını aradan qaldırır¹
+          </p>
+          <p>
+            Simptomatik vasitələrə (hərarətsalıcı, burun üçün damcılar, öskürəyə qarşı preparatlara) tələbatı azaldır²
+          </p>
+          <p>
+            Tez sağalmaq imkanı yaradır¹
+          </p>
+          <p>
+            Xəstə insanlarla təmas zamanı yoluxmanın qarşısını alır
+          </p>
+          <p>Keçirilmiş xəstəlikdən sonra qüvvəni bərpa edir¹</p>
+        </div>
+      </div>
+      <a name="block-2"></a>
+      <div class="block-2">
+        <h2>İNFLYUSID NECƏ TƏSİR GÖSTƏRİR</h2>
+        <div class="block-2__container">
+          <div class="block-2__image"> 
+            <b>
+              Orqanizmin təbii<br>müdafiəsini gücləndirir və tez sağalma<br>imkanı yaradır¹
+            </b>
+          </div>
+          <div class="block-2__text">
+            <p>Hərarəti salır</p>
+            <p>Bədəndə ağrı hissini aradan qaldırır</p>
+            <p>Baş ağrısını yox edir</p>
+            <p>Burun tıxanıqlığını azaldır</p>
+            <p>Boğazda ağrı və göynəməni aradan qaldırır</p>
+            <p>Xəstəliyin inkişafının qarşısının alınmasına imkan yaradır</p>
+          </div>
+        </div>
+      </div>
+      <a name="block-3"></a>
+      <div class="block-3">
+        <h2>
+          Viruslarla mübarizə üçün 6<br />
+          təbii component
+        </h2>
+        <div class="prod-mobile"></div>
+        <div class="block-3__container">
+          <div class="block-3__left-block">
+            <div class="block-3__plate">
+              <p>Bryonia</p>
+            </div>
+            <div class="block-3__plate">
+              <p>Aconitum</p>
+            </div>
+            <div class="block-3__plate">
+              <p>Ipecacuanha</p>
+            </div>
+          </div>
+          <div class="block-3__product"></div>
+          <div class="block-3__right-block">
+            <div class="block-3__plate">
+              <p>Eupatorium</p>
+            </div>
+            <div class="block-3__plate">
+              <p>Phosphorus</p>
+            </div>
+            <div class="block-3__plate">
+              <p>Gelsemium</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a name="block-4"></a>
+      <div class="block-4">
+        <h2>NECƏ QƏBUL ETMƏLİ</h2>
+<!--        <div class="change-box">-->
+<!--          <div>-->
+<!--            <p class=" p-btn1 active-btn">Таблетки</p>-->
+<!--          </div>-->
+<!--          <div>-->
+<!--            <p class="p-btn2">Краплі</p>-->
+<!--          </div>-->
+<!--        </div>-->
+      </div>
+      <div class="block-5 block-5-1 block-5-active">
+        <h3>Kəskin xəstəlik dövründə</h3>
+        <div class="block-5__container">
+          <div class="container__subcontainer">
+            <p>
+              <b>1 yaşdan 11 yaşadək uşaqlar:</b> hər 2 saatdan bir 1 həb olmaqla tam əriyənə qədər sormalıdır (sutkada 8 həbdən çox olmayaraq), yaxşılaşma baş verənədək. 
+            </p>
+            <div class="subcontainer">
+              <div class="subcontainer-particle-1">
+                <b>BİRİNCİ SUTKADA</b>
+                <b class="subtext">Hər 2 saatdan bir</b>
+                <p>1 həb</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill8"></div>
+              </div>
+              <div class="subcontainer-particle-1">
+                <b>
+                  Sonrakı müalicədə
+                </b>
+                <b class="subtext">Sağalanadək</b>
+                <p>Sutkada 3 dəfə 1 həb</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container__subcontainer">
+            <p>
+              <b>12 yaşlı uşaqlar və böyüklər:</b> hər saat, tam əriyənə qədər sormalıdır (sutkada 12 həbdən çox olmayaraq), yaxşılaşma baş verənədək. 
+            </p>
+            <div class="subcontainer">
+              <div class="subcontainer-particle-1">
+                <b>BİRİNCİ SUTKADA</b>
+                <b class="subtext">Hər saat</b>
+                <p>1 həb</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill12"></div>
+              </div>
+              <div class="subcontainer-particle-1">
+                <b>
+                  Sonrakı müalicə zamanı 
+                </b>
+                <b class="subtext">Sağalanadək</b>
+                <p>Sutkada 3 dəfə 1-2 həb</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="block-5__container-btext">
+          Müalicə müddəti:Tam sağalanadək 7-10 gün
+        </p>
+        <h3>KRVİ-nın profilaktikası üçün</h3>
+
+        <div class="block-5__container">
+          <div class="container__subcontainer">
+            <p>
+              <b>1 yaşdan 12 yaşadək uşaqlar:</b> sutkada 3 dəfə 1 həb sormalı
+            </p>
+            <div class="subcontainer vertical">
+              <div class="subcontainer-particle-1">
+                <b>SUTKADA</b>
+                <p>3 həbdən çox olmayaraq</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container__subcontainer">
+            <p>
+              <b>12 yaşlı uşaqlar və böyüklər:</b> sutkada 3 dəfə 1-2 həb sormalı
+            </p>
+            <div class="subcontainer vertical">
+              <div class="subcontainer-particle-1">
+                <b>SUTKADA</b>
+                <p>6 həbdən çox olmayaraq</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-text">
+          <p>
+            KRVİ və qrip simptomlarının ilkin təzahürləri zamanı və ya xəstələnmiş insanlarla təmasdan dərhal sonra  preparatın tətbiqi xəstəliyin inkişafının qarşısının alınmasına imkan yaradır; 
+          </p>
+          <p>
+            Qrip və ya KRVİ-1 xəstələri ilə təmasdan sonra İnflyusid preparatının uzun müddətli qəbulu;
+          </p>
+        </div>
+        <div class="bottom-text__b">
+          <b>
+            Həbləri ağızda tam əriyənədək asta-asta sormaq. 3 yaşadək uşaqlar üçün həbi az miqdarda mayedə həll etmək və ya əzilmiş şəkildə, dilin altında vermək tövsiyə edilir. Preparatı yeməkdən yarım saat əvvəl və ya yarım saat sonra qəbul etməli.  
+          </b>
+        </div>
+        <a class="buy-btn pill-btn"><p>Де купити</p></a>
+      </div>
+
+      <div class="block-5 block-5-2 block-5-disable">
+        <div class="block-5__container">
+          <div class="container__subcontainer">
+            <h4>При гострому захворюванні</h4>
+            <p>
+              <b>Дітям старше 12 років і дорослим:</b> приймати по 10 крапель кожну годину (не більше 12 прийомів на добу) до настання покращання
+            </p>
+            <div class="subcontainer">
+              <div class="subcontainer-particle-1">
+                <b>У ПЕРШУ ДОБУ</b>
+                <b class="subtext">Кожну годину</b>
+                <p>по 10 крапель</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container drop10"></div>
+              </div>
+              <div class="subcontainer-particle-1">
+                <b>
+                  ПРИ ПОДАЛЬШОМУ<br />ЛІКУВАННІ
+                </b>
+                <b class="subtext">До одужання</b>
+                <p>по 10 крапель 3 рази на добу</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container drop10"></div>
+              </div>
+              <p>Тривалість лікування 7-10 днів (до повного зникнення симптомів)</p>
+            </div>
+          </div>
+
+          <div class="container__subcontainer">
+            <h4>Для профілактики ГРВІ</h4>
+            <p>
+              <b>Дітям від 12 років і дорослим:</b>
+            </p>
+            <div class="subcontainer">
+              <div class="subcontainer-particle-1">
+                <b>
+                  ТРИ РАЗИ НА ДОБУ
+                </b>
+                <p>по 10 крапель</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container drop10"></div>
+              </div>
+              <p>Тривалість застосування препарату Інфлюцид після контакту з хворими на ГРВІ або грип — 1 тиждень;</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="bottom-text">
+          <p>
+            Застосування препарату при перших проявах симптомів ГРВІ та грипу або відразу після контакту з людьми, які захворіли, сприяє запобіганню розвитку захворювання;
+
+          </p>
+          <p>
+            Краплі розчину приймають за 30 хвилин до або через 30 хвилин після їди, потримавши їх деякий час у роті перед тим як проковтнути. Препарат можна розчиняти у невеликій кількості води (наприклад, у чайній ложці води).
+          </p>
+        </div>
+        <a class="buy-btn">Де купити</a>
+      </div>
+
+
+        <div class="block-6">
+            <h2>Faydalı məlumat</h2>
+            <div class="block-6__container">
+              <div class="block-6__container-img"><p>2020 qrip mövsümü</p></div>
+              <div class="block-6__container-text"><p>Epidemioloji mövsüm başlandı və artıq ona hazırlaşmaq lazımdır. Diqqət yetirin ki, qriplə KRVİ (kəskin respirator virus infeksiyası) arasındakı fərq ondan ibarətdir ki, qripin törədiciləri qrip virusunun müxtəlif ştamlarıdır (virusun bir növünün variantları, bunlar bir sıra xüsusiyyətləri üzrə fərqlənirlər), KRVİ-nın törədiciləri isə çox vaxt bir-biri ilə genetik bağlı olmayan və müxtəlif xəstəlik qruplarına məxsus olan 200-dən çox müxtəlif viruslardır. </p>
+                <p>2019-2020-ci il yeni mövsümündə nələr baş verə bilər?</p>
+              </div>
+              <button class="accordion">daha ətraflı</button>
+              <div class="panel">
+                <p>ÜST-nın hesablamalarına əsasən yeni epidemik mövsüm ərzində Şimal yarımkürəsində aşağıdakı qrip virusları dövr edəcək:</p>
+                <ul>
+                  <li>A/Brisbane/02/2018(H1N1) pdm09;</li>
+                  <li>A/Kansas/14/2017(H3N2);</li>
+                  <li>B/Colorado/06/2017 (лінія B/Victoria/2/87);</li>
+                  <li>B/Phuket/3073/2013 (лінія B/Yamagata/16/88).¹</li>
+                </ul>
+                <p>Qripin əsas simptomlarını xatırladırıq:</p>
+                <div class="panel__checklist">
+
+                  <p>Ani başlama;</p>
+                  <p>Baş ağrısı;</p>
+                  <p>пBədən temperaturunun 38°S və daha çox artması;</p>
+                  <p>Boğazda ağrı;</p>
+                  <p>Öskürək;</p>
+                  <p>Əzələ və oynaqlarda küt ağrı;</p>
+                  <p>Qusma və ishal.</p>
+
+                </div>
+                  <p>Xəstəliyin fəsadı olan pnevmoniya bəzən 4-5 gün ərzində xəstənin ölümü ilə nəticələnə bilər. 
+Həmçinin çox vaxt ürək çatışmazlığı inkişaf edir.</p>
+                <p>Əgər Siz artıq xəstələnmisinizsə, mütləq ailə həkiminizə və ya terapevtə müraciət edin.</p>
+                <p class="panel__accent-text">İnflyusid -soyuqdəymə və qrip zamanı sizin düzgün seçiminizdir. </p>
+                <div class="panel__checklist">
+                  <p>Preparatın təsdiq edilmiş virusəleyhinə aktivliyi Mövsümü H1N1, H5N2, H3N2 qripi zamanı İnflyusid preparatının sübut olunmuş virusəleyhinə aktivliyi *</p>
+                  <p>Qrip və KRVİ virusları ilə aktiv mübarizə aparır *</p>
+                  <p>KRX və qripin tipik simptomlarını tez aradan qaldırır</p>
+                  <p>Simptomatik vasitələrin tətbiqinə tələbatı azaldır ***</p>
+                  <p>Xəstələrlə təmas zamanı xəstəliklərin qarşısını alır</p>
+                </div>
+                <div class="panel__sub">
+                  <p>* M. Yu. Yeropkin, T. M. Qkudkova, D.M. Danilenko və digərləri: “Rusiyada 2009-cu il pandemik qripi”, RTJ Cild 18, 2010 </p>
+                  <p>** M. Tinnesse-Mallvits, V. Maydannik, T. Keller, P. Klement. Qızdırma ilə olan KRVİ-nın müalicəsi üçün kombinə edilmiş homeopatik vasitə: Beynəlxalq, randomizə olunmuş (qarışıq), nəzarət olunan tədqiqatı.”Forsch Komplementmed” jurnalı, Cild 22, Nəşr 3, İyun 2015.</p>
+                  <p>¹ Державна установа «Центр громадського здоров’я Міністерства охорони здоров’я України», www.phc.org.ua</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="block-6__container">
+              <div class="block-6__container-img"><p>Uşaqda soyuqdəymənin müalicəsi</p></div>
+              <div class="block-6__container-text"><p>
+                Təəssüf ki, bütün ömrü boyu uşağı soyuqdəymədən tam qorumaq mümkün deyil. Xüsusən ona görə ki, Sizin uşağınız öz həmyaşıdlarının əhatəsində olur. Uşaq bağçasında və ya məktəbdə bir uşağın xəstələnməsi kifayət edir ki, infeksiyanın sürətlə ötürülməsi baş versin. Uşağın xəstəliyi ananın tez-tez işdən məzuniyyət götürməsi ilə nəticələnir. Bu zaman suallar yaranır: ”Soyuqdəyməni necə tez müalicə etmək olar? Soyuqdəyməyə qarşı ən yaxşı dərman hansıdır? Soyuqdəymədən tez xilas olmaq olarmı? Soyuqdəymənin nadir hallarda olması və maksimum ağrısız keçməsi üçün nə etmək olar?” </p>
+              </div>
+              <button class="accordion">daha ətraflı</button>
+              <div class="panel">
+                <p>6 aylıqdan 12 yaşadək uşaqlarda soyuqdəymə hallarının sayı daha çox olur.    
+                    Uşaqlarda soyuqdəymə və KRVİ effektiv müalicəsi aşağıdakı ilkin əlamətlərə dərhal reaksiya verilməsini tələb edir:</p>
+
+                  <div class="panel__checklist">
+                  <p>Pis əhval, baş ağrısı;</p>
+                  <p>Yuxuculluq və ya yuxunun pozulması;</p>
+                  <p>İştahanın azalması;</p>
+                  <p>Əhval-ruhiyyənin pozulması, şıltaqlıq;</p>
+                  <p>Boğazda ağrı və qıcıqlanma;</p>
+                  <p>Üşümə və qızdırma ;</p>
+                  <p>Rinit - əvvəlcə duru ifrazat həm də boğazın arxa divarı ilə axır, sonra Burun tıxanıqlığı hissi və burunla tənəffüsün pozulması, iy bilmə qabiliyyətinin pozulması, asqırma¹;</p>
+                </div>
+                <p>Soyuqdəymə mövsümündə uşağın xəstələnməməsi və tez sağalması üçün onun immunitetini lazımı vəziyyətdə saxlamaq istəyirik. Bunu necə təhlükəsiz etmək olar? Axı uşaqlar üçün yalnız təbii və yoxlanmış vasitələri tətbiq etmək lazımdır.</p>
+                <p class="panel__accent-text">İnflyusid soyuqdəymə və qrip zamanı sizin düzgün seçiminizdir.</p>
+                <p>Alman istehsalı olan İnflyusid preparatı immuniteti gücləndirir və sağalmağa kömək edir. 
+İnflyusid preparatının effektivliyi və təhlükəsizliyi uşaqların da iştirak etdiyi bir çox kliniki tədqiqatlar zamanı öyrənilmişdir*.</p>
+                <p>Sizə və Sizin uşaqlarınıza möhkəm can sağlığı arzu edirik.</p>
+                <div class="panel__sub">
+                  <p>*Uşaqda soyuqdəymənin ilkin əlamətləri olduqda həkimə müraciət etmək zəruridir.</p>
+                  <p>¹ https://empendium.com/ua/chapter/B27.II.18.1.2.</p>
+                </div>
+
+
+
+
+              </div>
+              <a name="block-5"></a>
+            </div>
+
+            <div class="block-7">
+<!--              <h2>HARADAN ALMALI</h2>-->
+              <div class="apt-container">
+                <a href="https://www.aptekonline.az/"></a>
+                <a href="http://www.zeferan.az/"></a>
+                <a href="https://aptekstore.az/"></a>
+              
+                <a href="https://www.ozonaptek.az/"></a>
+                <a href="https://www.melhem.az/"></a>
+              </div>
+              <div class="block-7__text">
+                <h3>Sübutedici baza</h3>
+                <ol>
+                  <li>İnflyusid preparatının tibbi istifadəsinə dair təlimat</li>
+                  <li>Thinesse-Mallwitz, M., Maydannik, V., Keller, T., Klement, P. A Homeopathic Combination Preparation in the Treatment of Feverish Upper Respiratory Tract Infections: An International Randomized Controlled Trial</li>
+                </ol>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+          <div class="disclamer-tra">
+<!--            <ol>-->
+<!--              <li> https://www.engelhard.de/unternehmen/geschichte</li>-->
+<!--              <li> Продажі в упаковках препаратів Цетрарії ісландської (ісландського моху) за період 2015-2019 роки (2019 -3 квартали) згідно даних роздібного аудиту    Sale Out Системи дослідження фармацевтичного ринку «Фармексплорер» </li>-->
+<!--            </ol>-->
+            <p>
+              "Alpen Pharma AG"-nin Azərbaycan Respublikasındaki Nümayəndəliyi
+              <br>
+              Ünvan : Bakı şəhəri, Tbilisi prosp. 49/C, Chirag Plaza Hotel & Business Centre, AZ 1065,
+              <br>
+              Tel.: +994 12 499 72 71
+              <br>
+              www.alpenpharma.az
+            </p>
+            <div class="logos-container">
+              <a class="disclamer-tra__logo" href=""><p><b>İstehsalçı:</b><br>DHU<br>https://www.dhu.de/</p></a>
+              <a class="disclamer-tra__alpen" href="http://alpenpharma.com"><p><b>İdxalçı:</b><br> Alpen Pharma AG<br>www.alpenpharma.az</p></a>
+            </div>
+          </div>
+          <div class="disclamer-warning">
+            <p>Əks göstərişlər mövcuddur, istifadə etməzdən əvvəl həkim ilə məsləhətləşin</p>
+          </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>

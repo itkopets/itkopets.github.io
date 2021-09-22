@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Influcid</title>
+    <meta name="description" content="Influcid"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="shortcut icon" href="./images/q10.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="js/script.js"></script>
+  <script>
+    var content = {
+      man: [
+        {
+          selector: 'body > header > div.main-img-container',
+          content: '<div class="main-img-container_utm-man" ></div>'
+        }
+      ]
+    };
+
+    var selector = 'body > header > div.main-img-container';
+    function replacer(content) {
+      var utm = /utm_replace=([^&]*)/g.exec(document.URL)[1];
+      if (utm in content) {
+        console.log(utm);
+        for (i in content[utm]) {
+          document.querySelector(content[utm][i]['selector']).innerHTML=content[utm][i]['content'];
+        };
+      } else {
+        console.log('Каталог контента не имеет такой utm метки');
+      };
+    };
+    replacer(content);
+  </script>
+</head>
+<body>
+    <!-- <div class="alert-license">
+      <a href="license.html">
+        Ovaj sajt koristi kolačiće kako bi poboljšao korisničko iskustvo. Nastavkom korišćenja ovog sajta<br>slažete se sa upotrebom kolačića i naše <b>Politike privatnosti</b>
+      </a>
+      <button class="license-off"><p>Slažem se</p></button>
+    </div> -->
+	<header class="App-header">
+
+
+        <a name='block-nav'></a>
+        <div class="navigation-logo">
+          <a  href="#block-nav" class="logo">Iнфлюцид</a>
+          <a class="where-to-buy where-to-buy__desktop" href="#block-5">Де купити</a>
+          <div class="navigation-top" role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" /> <span></span> <span></span> <span></span>
+              <ul id="menu">
+                <li><a class="navmenu" href="#block-1" >Переваги</a></li>
+                <li><a class="navmenu" href="#block-2" >Дiя</a></li>
+                <li><a class="navmenu" href="#block-3" >Склад</a></li>
+                <li><a class="navmenu" href="#block-4" >Як приймати</a></li>
+<!--                <li><a class="where-to-buy" href="#block-5" >Де купити</a></li>-->
+                <li><a href="index-ru.html" >ru</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="desctop-navigation">
+            <a class="navmenu" href="#block-1" >Переваги</a>
+              <a class="navmenu" href="#block-2" >Дiя</a>
+              <a class="navmenu" href="#block-3" >Склад</a>
+              <a class="navmenu" href="#block-4" >Як приймати</a>
+              <a class="where-to-buy" href="#block-5" >Де купити</a>
+              <a href="index-ru.html" >ru</a>
+          </div>
+          <a class="instruction" href="./instruction.pdf"
+          ><p class="translated-text" key="instruction">Iнструкцiя</p></a
+          >
+        </div>
+
+
+
+
+          </div>
+        </div>
+
+      <a class="fixed-link" href="https://liki24.com/index.php?route=checkout%2Fcustom_cart&cart_id=57214&utm_source=inflyucid-60&utm_medium=referral&utm_campaign=inflyucid">замовити доставку</a>
+
+        <div class="main-img-container">
+          <div class="main-img-container_utm" ></div>
+        </div>
+        <a name="block-1"></a>
+        <p>
+          <b>Вiрус?</b> Вибiр за тобою. <b>Iнфлюцид</b>
+        </p>
+
+        <div class="header-block-2">
+          <a class="block-2__plate">
+            <p>Вироблено в Німеччині</p>
+          </a>
+          <a class="block-2__plate">
+            <p>Дорослим та дітям від 1 року</p>
+          </a>
+          <a class="block-2__plate">
+            <p>Натуральний склад</p>
+          </a>
+          <a href="https://www.clinicaltrialsregister.eu/ctr-search/search?query=Influcid" class="block-2__plate">
+            <p>Доведена ефективність</p>
+          </a>
+        </div>
+      </header>
+      <div class="block-1">
+        <h2>ПЕРЕВАГИ</h2>
+        <div class="block-1__text">
+          <p>
+            Швидко зупиняє типові ознаки застуди¹
+          </p>
+          <p>
+            Зменшує потребу у застосуванні симптоматичних засобів (жарознижуючi, краплi в ніс, препарати від кашлю)²
+          </p>
+          <p>
+            Сприяє швидкому одужанню¹
+          </p>
+          <p>
+            Запобігає захворюванню при контакті з людьми, які хворіють
+          </p>
+          <p>Відновлює сили після перенесеної хвороби, зменшує ознаки виснаження¹</p>
+        </div>
+      </div>
+      <a name="block-2"></a>
+      <div class="block-2">
+        <h2>ЯК ДІЄ ІНФЛЮЦИД</h2>
+        <div class="block-2__container">
+          <div class="block-2__image">
+            <b>
+              Посилює природний<br>захист організму і сприяє<br>швидкому одужанню¹
+            </b>
+          </div>
+          <div class="block-2__text">
+            <p>ЗНИЖУЄ ПІДВИЩЕНУ ТЕМПЕРАТУРУ</p>
+            <p>ПРИБИРАЄ ВІДЧУТТЯ ЛОМОТИ В ТІЛІ</p>
+            <p>УСУВАЄ ГОЛОВНИЙ БІЛЬ</p>
+            <p>ЗМЕНШУЄ ЗАКЛАДЕНІСТЬ НОСА</p>
+            <p>УСУВАЄ БІЛЬ І ПЕРШІННЯ В ГОРЛІ</p>
+            <p>ЗАПОБІГАЄ РОЗВИТКУ ЗАХВОРЮВАННЯ</p>
+          </div>
+        </div>
+      </div>
+      <a name="block-3"></a>
+      <div class="block-3">
+        <h2>
+          6 ПРИРОДНИХ КОМПОНЕНТІВ<br />
+          ДЛЯ БОРОТЬБИ З ВІРУСАМИ
+        </h2>
+        <div class="prod-mobile"></div>
+        <div class="block-3__container">
+          <div class="block-3__left-block">
+            <div class="block-3__plate">
+              <p>Bryonia</p>
+            </div>
+            <div class="block-3__plate">
+              <p>Aconitum</p>
+            </div>
+            <div class="block-3__plate">
+              <p>Ipecacuanha</p>
+            </div>
+          </div>
+          <div class="block-3__product"></div>
+          <div class="block-3__right-block">
+            <div class="block-3__plate">
+              <p>Eupatorium</p>
+            </div>
+            <div class="block-3__plate">
+              <p>Phosphorus</p>
+            </div>
+            <div class="block-3__plate">
+              <p>Gelsemium</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a name="block-4"></a>
+      <div class="block-4">
+        <h2>ЯК ПРИЙМАТИ</h2>
+        <div class="change-box">
+          <div>
+            <p class=" p-btn1 active-btn">Таблетки</p>
+          </div>
+          <div>
+            <p class="p-btn2">Краплі</p>
+          </div>
+        </div>
+      </div>
+      <div class="block-5 block-5-1 block-5-active">
+        <h3>У період гострого захворювання</h3>
+        <div class="block-5__container">
+          <div class="container__subcontainer">
+            <p>
+              <b>Дітям від 1 до 12 років:</b> розсмоктувати по 1 таблетці кожні 2
+              години (не більше 8 таблеток у день) до настання покращання
+            </p>
+            <div class="subcontainer">
+              <div class="subcontainer-particle-1">
+                <b>У ПЕРШУ ДОБУ</b>
+                <b class="subtext">Кожні 2 години</b>
+                <p>по 1 таблетці</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill8"></div>
+              </div>
+              <div class="subcontainer-particle-1">
+                <b>
+                  ПРИ ПОДАЛЬШОМУ<br />ЛІКУВАННІ
+                </b>
+                <b class="subtext">До одужання</b>
+                <p>по 1 таблетці 3 рази на добу</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container__subcontainer">
+            <p>
+              <b>Дітям від 12 років і дорослим:</b> розсмоктувати по 1 таблетці кожну годину (не більше 12 таблеток на добу) до настання покращання
+
+            </p>
+            <div class="subcontainer">
+              <div class="subcontainer-particle-1">
+                <b>У ПЕРШУ ДОБУ</b>
+                <b class="subtext">Кожну годину</b>
+                <p>по 1 таблетці</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill12"></div>
+              </div>
+              <div class="subcontainer-particle-1">
+                <b>
+                  ПРИ ПОДАЛЬШОМУ<br />ЛІКУВАННІ
+                </b>
+                <b class="subtext">До одужання</b>
+                <p>1-2 таблетки 3 рази на добу</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="block-5__container-btext">
+          Тривалість лікування 7-10 днів (до повного зникнення симптомів)
+        </p>
+        <h3>Для профілактики ГРВІ</h3>
+
+        <div class="block-5__container">
+          <div class="container__subcontainer">
+            <p>
+              <b>Дітям від 1 до 12 років:</b> розсмоктувати по 1 таблетці 3 рази на
+              добу
+            </p>
+            <div class="subcontainer vertical">
+              <div class="subcontainer-particle-1">
+                <b>ЗА ДОБУ</b>
+                <p>не більше 3 таблеток на добу</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container__subcontainer">
+            <p>
+              <b>Дітям від 12 років і дорослим:</b> розсмоктувати по 1-2 таблетки 3 рази на добу
+            </p>
+            <div class="subcontainer vertical">
+              <div class="subcontainer-particle-1">
+                <b>ЗА ДОБУ</b>
+                <p>не більше 6 таблеток на добу</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container pill6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-text">
+          <p>
+            Застосування препарату при перших проявах симптомів ГРВІ та грипу або відразу після контакту з людьми, які захворіли, сприяє запобіганню розвитку захворювання;
+          </p>
+          <p>
+            Тривалість застосування препарату Інфлюцид після контакту з хворими на ГРВІ або грип - 1 тиждень;
+          </p>
+        </div>
+        <div class="bottom-text__b">
+          <b>
+            Таблетки слід повільно розсмоктувати в порожнині роту. Дітям до 3 років можна розчиняти таблетку в невеликій кількості води.
+Препарат приймати за 30 хвилин до або через 30 хвилин після їди.
+          </b>
+        </div>
+        <a class="buy-btn pill-btn"><p>Де купити</p></a>
+      </div>
+
+      <div class="block-5 block-5-2 block-5-disable">
+        <div class="block-5__container">
+          <div class="container__subcontainer">
+            <h4>При гострому захворюванні</h4>
+            <p>
+              <b>Дітям старше 12 років і дорослим:</b> приймати по 10 крапель кожну годину (не більше 12 прийомів на добу) до настання покращання
+            </p>
+            <div class="subcontainer">
+              <div class="subcontainer-particle-1">
+                <b>У ПЕРШУ ДОБУ</b>
+                <b class="subtext">Кожну годину</b>
+                <p>по 10 крапель</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container drop10"></div>
+              </div>
+              <div class="subcontainer-particle-1">
+                <b>
+                  ПРИ ПОДАЛЬШОМУ<br />ЛІКУВАННІ
+                </b>
+                <b class="subtext">До одужання</b>
+                <p>по 10 крапель 3 рази на добу</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container drop10"></div>
+              </div>
+              <p>Тривалість лікування 7-10 днів (до повного зникнення симптомів)</p>
+            </div>
+          </div>
+
+          <div class="container__subcontainer">
+            <h4>Для профілактики ГРВІ</h4>
+            <p>
+              <b>Дітям від 12 років і дорослим:</b>
+            </p>
+            <div class="subcontainer">
+              <div class="subcontainer-particle-1">
+                <b>
+                  ТРИ РАЗИ НА ДОБУ
+                </b>
+                <p>по 10 крапель</p>
+              </div>
+              <div class="subcontainer-particle-2">
+                <div class="clock-img"></div>
+                <div class="pill-container drop10"></div>
+              </div>
+              <p>Тривалість застосування препарату Інфлюцид після контакту з хворими на ГРВІ або грип — 1 тиждень;</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="bottom-text">
+          <p>
+            Застосування препарату при перших проявах симптомів ГРВІ та грипу або відразу після контакту з людьми, які захворіли, сприяє запобіганню розвитку захворювання;
+
+          </p>
+          <p>
+            Краплі розчину приймають за 30 хвилин до або через 30 хвилин після їди, потримавши їх деякий час у роті перед тим як проковтнути. Препарат можна розчиняти у невеликій кількості води (наприклад, у чайній ложці води).
+          </p>
+        </div>
+        <a class="buy-btn">Де купити</a>
+      </div>
+
+
+        <div class="block-6">
+            <h2>КОРИСНА ІНФОРМАЦІЯ</h2>
+
+
+
+          <div class="block-6__container">
+            <div class="block-6__container-img"><p>Здорові поради для здорових людей</p></div>
+            <div class="block-6__container-text"><p>Цього року, як ніколи раніше, ми постійно адаптуємося до чогось нового. Зараз настав час послаблення карантину, чи готові ми до цього? Що робити, щоб зберегти своє здоров’я як психічне, так і фізичне?
+            </p>
+              <p>ЯК ПРАВИЛЬНО АДАПТУВАТИСЯ ДО ПОСЛАБЛЕННЯ КАРАНТИНУ?</p>
+            </div>
+            <button class="accordion">Детальнiше</button>
+            <div class="panel">
+              <p>Під час послаблення карантину люди можуть почуватися по-різному. Емоційні реакції на цьому етапі можуть включати:</p>
+              <ul>
+                <li>страх і тривогу за здоров’я близьких;</li>
+                <li>стрес через постійне хвилювання за власне здоров’я;</li>
+                <li>смуток, гнів, фрустрацію через те, що друзі та близькі люди уникають контактів через побоювання інфікування;</li>
+                <li>почуття провини через те, що під час карантину не було змоги повноцінно виконувати робочі та/або батьківські обов’язки.</li>
+              </ul>
+              <p>Діти теж можуть відчувати різні емоції під час послаблення карантину<sup>1</sup>.</p>
+              <p>Рівень агресії серед населення зараз дійсно занадто високий. Довгі обмеження, пристосування до нових умов життя, дистанційна робота / навчання, мінлива холодна погода – все це призводить до конфліктів з близькими, агресії за кермом, сварок у соціальних мережах тощо.</p>
+              <p>Це не є здоровою реакцією з точки зору психіки. Щоб позбутися агресії нормальним способом, пропонуємо:</p>
+              <ul>
+                <li>Виділити трохи часу на улюблене хобі (когось заспокоює арт-терапія, когось приваблює в’язання, а комусь необхідно просто пограти в улюблену гру).</li>
+                <li>Ділитися своїми переживаннями з близькими. Але робити це спокійно та розмовляти відкрито. Не накопичуйте у собі образи. </li>
+                <li>Покричати. Так, іноді просто крик (НЕ на когось, а на самоті!) заспокоює. Також допомагає гучний спів і активні танцювальні рухи. Таким чином ми позбавляємося від напруги.</li>
+                <li>Спорт. Банально, але 100% дієвий спосіб</li>
+              </ul>
+
+
+              <p>Здорові правила поведінки для здоров’я<br>
+                Не забувайте про безконтактні привітання: усмішка, помах голови. Повірте, це нормально сказати людині, яка має намір вас обійняти при зустрічі: «Вибач, давай зараз тримати дистанцію. Я дотримуюся правил. Поважай, будь ласка, мій вибір». Без грубості, образ та звинувачень.<br>
+                Окрім дотримання рекомендацій, гігієнічних і соціальних норм та правил, необхідно самостійно піклуватися про своє здоров'я і імунітет. Лікарський засіб Інфлюцид посилює природний захист організму<sup>2</sup> .  Пам’ятайте, що зараз точно не час хворіти. Застосування препарату Інфлюцид при перших проявах симптомів гострої респіраторної вірусної інфекції та грипу або відразу після контакту з людьми, які захворіли на вірусну інфекцію, сприяє запобіганню розвитку захворювання<sup>2</sup>. Для профілактики ГРВІ таблетку Інфлюцид повільно розсмоктують у ротовій порожнині за 30 хвилин до або через 30 хвилин після їди 3 рази на добу. Більш детальна інформація про спосіб застосування в Інструкції. </p>
+              <p>Бережіть себе, своїх близьких та тих, хто поруч з Вами. Бажаємо міцного здоров’я та стійкого імунітету.</p>
+              <div class="panel__sub">
+                <p><sup>1</sup> https://phc.org.ua/news/yak-pravilno-adaptuvatisya-do-poslablennya-karantinu</p>
+                <p><sup>2</sup> Інструкція для медичного застосування до препарату Інфлюцид</p>
+              </div>
+            </div>
+          </div>
+
+<!-- //////new -->
+<div class="block-6__container">
+              <div class="block-6__container-img"><p>Час обирати здоров'я</p></div>
+              <div class="block-6__container-text"><p>Генеральний директор Всесвітньої організації охорони здоров’я на брифінгу для ЗМІ щодо коронавірусу COVID-19 від 11 березня 2020 р., заявив, що COVID-19 можна характеризувати як пандемію.<br>Це не привід панікувати та боятися. В цей період слід дотримуватися рекомендацій ВООЗ, МОЗ України та лікарів. А також тверезо мислити та оцінювати ситуацію.
+Наразі є дуже багато інформації про коронавірус, шляхи його передачі, що потрібно робити, щоб не заразитися та як себе вести в умовах карантину. Орієнтуйтесь на офіційні рекомендації.</p>
+              </div>
+              <button class="accordion">Детальнiше</button>
+              <div class="panel">
+
+              	<h1>Як себе захистити від вірусних інфекцій<sup>2</sup></h1>
+
+              	<div class='panel-inner'>
+              		<div>
+              			<h3>Зміцнюйте імунітет та слідкуйте за самопочуттям</h3>
+						<p>Повноцінне харчування, здоровий сон, фізичні вправи та водний баланс організму</p>
+					</div>
+
+					<div>
+						<h3>Уникайте контакту з людьми із симптомами ГРВІ</h3>
+						<p>З тими, хто має симптоми застуди. Мінімальна дистанція- 1,5 м</p>
+					</div>
+
+					<div>
+						<h3>Вчасно звертайтеся до лікаря</h3>
+						<p>У разі появи перших симптомів ГРВІ невідкладно зверніться до свого сімейного лікаря</p>
+					</div>
+
+					<div>
+						<h3>Термічно обробляйте продукти</h3>
+						<p>Не їжте сире м’ясо, м’ясні субпродукти та яйця</p>
+					</div>
+
+					<div>
+						<h3>Мийте часто руки з милом упродовж 20- ти секунд</h3>
+						<p>Або користуйтесь антисептиком, вміст спирту в якому не повинен бути менше 60 - 80%</p>
+					</div>
+
+					<div>
+						<h3>Уникайте дотиків до свого обличчя</h3>
+						<p>Не торкайтеся брудними руками очей, носа та рота</p>
+					</div>
+              	</div>
+
+                
+
+
+                <p>Ускладнений перебіг хвороби на сьогодні мають люди похилого віку, тяжкохворі, люди з супутніми захворюваннями (серцево – судинні захворювання, онкологія, діабет) та ті, у кого знижений імунітет.</p>
+                <p>Наразі увага населення віддана та сконцентрована навколо розповсюдження коронавірусу COVID-19, але не слід забути, що підвищилась захворюваність на грип та ГРВІ. </p>
+                <p>На 10 тижні на ГРВІ захворіли 220 932 особи, із них 66,4% - діти віком до 17 років. Інтенсивний показник захворюваності становить 577,8 на 100 000 населення, що на 21,2% більше епідемічного порога по Україні <sup>3</sup>.  </p>
+                <div class='inner-img'></div>
+                <p>Препарат ІНФЛЮЦИД містить шість активних компонентів, найбільш прийнятних для лікування гострої респіраторної вірусної інфекції. ІНФЛЮЦИД зупиняє типові ознаки гострої інфекції дихальних шляхів, такі як гарячка, головний біль, болючість м’язів, а також риніт та фарингіт <sup>1</sup>. </p>
+                <p>ІНФЛЮЦИД посилює природний захист організму і сприяє швидкому видужанню і відновленню сил після перенесеного захворювання, у такий спосіб зменшує ознаки виснаження (астенічний синдром) або запобігає їм. Застосування препарату при перших проявах захворювання або відразу після контакту з людьми, які захворіли, сприяє запобіганню розвитку захворювання<sup>1</sup>.</p>
+                <p>Бережіть себе та своїх близьких. Бажаємо міцного здоров’я та стійкого імунітету.</p>
+                	<p><sup>1</sup><a href='./instruction.pdf' >Інструкція для медичного застосування до препарату Інфлюцид</a></p>
+                  <p><sup>2</sup><a href='http://covid19.com.ua/#rec166168889' >http://covid19.com.ua/#rec166168889</a></p>
+                  <p><sup>3</sup><a href='https://www.phc.org.ua/kontrol-zakhvoryuvan/inshi-infekciyni-zakhvoryuvannya/monitoring-i-ocinka/zakhvoryuvanist-na-grip-ta-grvi-v-ukraini' >https://www.phc.org.ua/kontrol-zakhvoryuvan/inshi-infekciyni-zakhvoryuvannya/monitoring-i-ocinka/zakhvoryuvanist-na-grip-ta-grvi-v-ukraini</a></p>
+                  
+              </div>
+            </div>
+<!-- /////////////new -->
+
+            <div class="block-6__container">
+              <div class="block-6__container-img"><p>Грип сезону 2020</p></div>
+              <div class="block-6__container-text"><p>Епідеміологічний сезон розпочався, і вже настав час до нього готуватися. Зверніть увагу, що різниця між грипом та ГРВІ (гострою респіраторною вірусною інфекцією) полягає у тому, що збудниками грипу є різні штами вірусу грипу (варіанти одного виду вірусу, що відрізняються за рядом властивостей), а збудниками ГРВІ є понад 200 різноманітних вірусів, які часто не пов'язані генетично та належать до різних груп захворювань.</p>
+                <p>Чого чекати у новому сезоні 2019 - 2020 рр.?</p>
+              </div>
+              <button class="accordion">Детальнiше</button>
+              <div class="panel">
+                <p>За розрахунками ВООЗ упродовж нового епідемічного сезону в Північній півкулі циркулюватимуть віруси грипу, подібні до:</p>
+                <ul>
+                  <li>A/Brisbane/02/2018(H1N1) pdm09;</li>
+                  <li>A/Kansas/14/2017(H3N2);</li>
+                  <li>B/Colorado/06/2017 (лінія B/Victoria/2/87);</li>
+                  <li>B/Phuket/3073/2013 (лінія B/Yamagata/16/88).¹</li>
+                </ul>
+                <p>Нагадаємо основні симптоми грипу:</p>
+                <div class="panel__checklist">
+
+                  <p>раптовий початок;</p>
+                  <p>головний біль;</p>
+                  <p>підвищення температури тіла до 38 °С і більше;</p>
+                  <p>біль у горлі;</p>
+                  <p>кашель;</p>
+                  <p>ломота у м’язах і суглобах;</p>
+                  <p>може бути блювота та пронос.</p>
+
+                </div>
+                  <p>Як ускладнення хвороби - пневмонія, яка інколи може за 4-5 днів призвести до смерті хворого. Також нерідко розвивається серцева недостатність.</p>
+                <p>Якщо Ви вже захворіли, обов’язково зверніться до свого сімейного лікаря чи терапевта. </p>
+                <p class="panel__accent-text">Інфлюцид – ваш правильний вибір при застуді та грипі</p>
+                <div class="panel__checklist">
+                  <p>Доведена противірусна активність Інфлюциду при сезонному  H1N1, H5N2, H3N2 грипі*</p>
+                  <p>Активно бореться з вірусами грипу та ГРВІ*</p>
+                  <p>Швидко знімає типові симптоми ГРЗ та грипу</p>
+                  <p>Зменшує потребу у застосуванні симптоматичних засобів**</p>
+                  <p>Запобігає захворюванню при контакті з хворим</p>
+                </div>
+                <div class="panel__sub">
+                  <p>* М.Ю. Еропкін, Т.М. Гкудкова, Д.М. Даниленко та соавт: «Пандемический грипп 2009 г в России», РМЖ Том 18, 2010</p>
+                  <p>** М. Тинессе-Маллвиц, В. Майданник, Т. Келлер, П. Клемент. Комбинированное гомеопатическое средство для лечения лихорадочных ОРВИ:
+ Международное, рандомизированное, контролируемое исследование. Журнал «Forsch Komplementmed», Том 22, Издание 3, июнь 2015 г.</p>
+                  <p>¹ Державна установа «Центр громадського здоров’я Міністерства охорони здоров’я України», www.phc.org.ua</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="block-6__container">
+              <div class="block-6__container-img"><p>Застуда у дитини</p></div>
+              <div class="block-6__container-text"><p>
+                Прикро, що повністю і на все життя вберегти свою дитину від застуди неможливо. Тим паче, коли кожного дня Ваше чадо знаходиться в оточенні своїх одноліток. Достатньо одному малюку у дитячому садку чи у школі захворіти, щоб інфекція швидко передалася далі. Хвороба дитини часто тягне за собою лікарняний у мами. І тут постають питання: «Як лікувати швидко застуду? Які найкращі ліки від застуди? Чи можна швидко позбавитися від застуди? Що можна зробити, щоб застуда у дитини була рідше та проходила максимально безболісно?»</p>
+              </div>
+              <button class="accordion">Детальнiше</button>
+              <div class="panel">
+                <p>Найбільше число застуд у дитини припадає на вік від шести місяців до 12 років, тому що формується імунна система.Ефективне лікування застуди та ГРВЗ у дітей вимагає негайного реагування на перші ознаки, адже початок захворювання зазвичай легкий, не стрімкий:</p>
+
+                  <div class="panel__checklist">
+                  <p>Погане самопочуття, біль голови та м'язів;</p>
+                  <p>Сонливість або порушення сну;</p>
+                  <p>Зниження апетиту;</p>
+                  <p>Погіршення настрою, капризність;</p>
+                  <p>Біль та першіння в горлі;</p>
+                  <p>Озноб та лихоманка (загалом невисока температура);</p>
+                  <p>Риніт — на початку водянисті виділення, які стікають також по задній стінці глотки, у подальшому — відчуття закладення носа та порушення носового дихання, порушення нюху, чхання¹;</p>
+                </div>
+                <p>У сезон застуд так хочеться підтримати імунітет дитини, щоб вона не хворіла або одужувала швидше, але як зробити це безпечно? Адже для дітей хочеться застосовувати тільки натуральні і перевірені засоби.</p>
+                <p class="panel__accent-text">Інфлюцид – ваш правильний вибір при застуді та грипі</p>
+                <p>Німецький препарат Інфлюцид зміцнює імунітет і сприяє одужанню.
+Ефективність та безпечність препарату Інфлюцид вивчені в ході багатьох клінічних досліджень, у тому числі за участю дітей*.</p>
+                <p>Бажаємо Вам та Вашим діткам надміцного здоров’я та вкрай стійкого імунітету.</p>
+                <div class="panel__sub">
+                  <p>*При перших ознаках застуди у дитини необхідно звернутися до лікаря.</p>
+                  <p>¹ https://empendium.com/ua/chapter/B27.II.18.1.2.</p>
+                </div>
+
+
+
+
+              </div>
+              <a name="block-5"></a>
+            </div>
+
+<!--          new////-->
+
+
+
+          <!--          new////-->
+
+            <div class="block-7">
+              <h2>ДЕ КУПИТИ</h2>
+              <div id="comp_wgt" data-drug="11722,11721" data-lang="ru" data-url="https://compendium.com.ua/info/11096/infljutsid/" data-proj="инфлюцид" style="border-color: #2894cf; width: 80%"><div class="title" style="background: #2894cf; "><a href="https://compendium.com.ua/info/11096/infljutsid/" title="ИНФЛЮЦИД, Alpen Pharma AG" class="logo"><img src="https://compendium.com.ua/widget/compendium_ru.svg"></a><a href="https://compendium.com.ua/cart/" class="cart"><img src="https://compendium.com.ua/widget/cart.svg" data-pagespeed-url-hash="161338521" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"><span id="comp_cnt" class="badge">0</span></a></div><ul role="tablist" class="nav nav-tabs"><li class="nav-item active"><a href="#comp_map" aria-controls="comp_map" role="tab" data-toggle="tab" class="nav-link active"><span>Карта</span></a></li><li class="nav-item"><a href="#comp_lst" aria-controls="comp_lst" role="tab" data-toggle="tab" class="nav-link">В аптеку</a></li><li class="nav-item"><a href="#comp_crt" aria-controls="comp_crt" role="tab" data-toggle="tab" class="nav-link"><span>Корзина</span></a></li></ul><div class="tab-content"><div id="comp_inf" class="tab-pane" style="height: 342px;"></div><div id="comp_map" class="tab-pane active" style="height: 342px;"></div><div id="comp_lst" class="tab-pane" style="height: 342px;"></div><div id="comp_crt" class="tab-pane" style="height: 342px;"></div></div></div><link rel="stylesheet" href="https://geowidget.morion.ua/css/style.css" type="text/css" media="all"/><link rel="stylesheet" href="https://compendium.com.ua/widget/widget.css" type="text/css" media="all"/><script src="https://compendium.com.ua/widget/widget.js" defer></script>
+              <!-- <div class="block-7__img"></div> -->
+              <div class="block-7__text">
+                <h3>Доказова база</h3>
+                <ol>
+                  <li>Інструкція для медичного застосування до препарату Інфлюцид</li>
+                  <li>Thinesse-Mallwitz, M., Maydannik, V., Keller, T., Klement, P. A Homeopathic Combination Preparation in the Treatment of Feverish Upper Respiratory Tract Infections: An International Randomized Controlled Trial</li>
+                </ol>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+          <div class="disclamer-tra">
+<!--            <ol>-->
+<!--              <li> https://www.engelhard.de/unternehmen/geschichte</li>-->
+<!--              <li> Продажі в упаковках препаратів Цетрарії ісландської (ісландського моху) за період 2015-2019 роки (2019 -3 квартали) згідно даних роздібного аудиту    Sale Out Системи дослідження фармацевтичного ринку «Фармексплорер» </li>-->
+<!--            </ol>-->
+            <p>
+              Реклама лікарського засобу. Перед застосуванням уважно ознайомтесь з інструкцією та проконсультуйтеся з лікарем. Зберігати у недоступному для дітей місці. Інфлюцид таб. Р.П. № UA/6740/01/01 від 08.11.2017. Інфлюцид краплі Р.П. № UA/6740/02/01 від 13.12.2017.
+              <br>
+              Ексклюзивний дистриб'ютор: ПрАТ «Натурфарм», вул.Лісна, 30а, м.Київ, Пуща-Водиця, 04075; телефон: (044) 401-81-03
+            </p>
+            <div class="logos-container">
+              <a class="disclamer-tra__logo" href=""><p><b>Виробник:</b><br>DHU (Німеччина)<br>https://www.dhu.de/</p></a>
+              <a class="disclamer-tra__alpen" href="http://alpenpharma.com"><p><b>Постачальник:</b><br> Альпен Фарма АГ<br>(Швейцарія)</p></a>
+            </div>
+          </div>
+          <div class="disclamer-warning">
+            <p>САМОЛІКУВАННЯ МОЖЕ БУТИ ШКІДЛИВИМ ДЛЯ ВАШОГО ЗДОРОВ’Я</p>
+          </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
